@@ -80,7 +80,7 @@ int main()
     cin >> s;
 
     int num =  roman_to_dec(s);
-    if (num != -1) {
+    if (num == 0) {
         cout << num << endl;
     }
     else {

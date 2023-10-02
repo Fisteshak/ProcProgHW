@@ -1,17 +1,16 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
 
 int gcd(int n, int m)
 {
     if (m == 0) {
-        return m;
+        return n;
     }
-    while (n > m) {
+    while (n >= m) {
         n -= m;
     }
-    return gcd(max(m, n), n);
+    return gcd(max(m, n), min(m ,n));
 
 }
 
@@ -38,7 +37,7 @@ int main()
     }
     else {
 
-        cout << gcd(max(n, m), min(n, m));
+        cout << gcd2(max(n, m), min(n, m));
     }
 
 }
