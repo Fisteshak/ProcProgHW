@@ -29,7 +29,7 @@ int main()
             }
             else {
                 if (!p[i-1]) {
-                     if (cur_end - cur_st > max_end - max_st) {
+                     if (cur_end - cur_st >= max_end - max_st) {
                         max_end = cur_end;
                         max_st = cur_st;
                      }
