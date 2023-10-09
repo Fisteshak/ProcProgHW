@@ -37,7 +37,6 @@ private:
 
     void print_recursive(const unique_ptr<TreeNode>& node) {
         if (node->left != nullptr) {
-
             print_recursive(node->left);
         }
         cout << node->value << "\n";
